@@ -10,20 +10,37 @@ namespace PartyInvites.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public ViewResult Index()
+        {
+            int hour = DateTime.Now.Hour;
+            ViewBag.Greeting = hour < 12 ? "Good Morning" : "Good Afternoon";
+            return View("MyView");        }
+
+        public ViewResult Halo()
+        {
+            return View("MyView");        }
+
+        [HttpGet] // response to an HTTP GET request
+        public ViewResult RsvpForm()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost] //response to an HTTP POST request
+        public ViewResult RsvpForm(GuestResponse guestResponse)
         {
-            return View();
+            // TODO: store response from guest
+            Repository.AddResponse(guestResponse);
+            return View("Thanks", guestResponse);
+
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public ViewResult ListResponses()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(Repository.Responses.Where(r => r.WillAttend == true));
         }
+
+
+
     }
 }
