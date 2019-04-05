@@ -31,3 +31,4 @@ C:\Users\weizhchu\source\repos\PartyInvites\PartyInvites\obj\Debug\netcoreapp2.2
 C:\Users\weizhchu\source\repos\PartyInvites\PartyInvites\obj\Debug\netcoreapp2.2\Razor\Views\Home\MyView.g.cshtml.cs
 C:\Users\weizhchu\source\repos\PartyInvites\PartyInvites\obj\Debug\netcoreapp2.2\Razor\Views\Home\RsvpForm.g.cshtml.cs
 C:\Users\weizhchu\source\repos\PartyInvites\PartyInvites\obj\Debug\netcoreapp2.2\Razor\Views\Home\Thanks.g.cshtml.cs
+C:\Users\weizhchu\source\repos\PartyInvites\PartyInvites\obj\Debug\netcoreapp2.2\Razor\Views\Home\ListResponses.g.cshtml.cs

@@ -6,6 +6,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body>
     <div>
@@ -13,8 +14,14 @@
         @ViewBag.Greeting World<br />
         <p>
             We're going to have an exciting party.<br />
-            (To do:):  <a asp-action="RsvpForm">RSVP Now</a>
+            (To do:):  <a asp-action="RsvpForm">RSVP Now</a>
+
         </p>
     </div>
+    <div class="text-center">
+        <h3>We're going to have an exciting party!</h3>
+        <h4>And you are invited</h4>
+        <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a>
+        </div>
 </body>
 </html>
