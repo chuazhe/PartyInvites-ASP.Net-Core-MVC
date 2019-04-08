@@ -14,11 +14,13 @@ namespace PartyInvites.Controllers
         {
             int hour = DateTime.Now.Hour;
             ViewBag.Greeting = hour < 12 ? "Good Morning" : "Good Afternoon";
-            return View("MyView");        }
+            return View("MyView");
+        }
 
         public ViewResult Halo()
         {
-            return View("MyView");        }
+            return View("MyView");
+        }
 
         [HttpGet] // response to an HTTP GET request
         public ViewResult RsvpForm()

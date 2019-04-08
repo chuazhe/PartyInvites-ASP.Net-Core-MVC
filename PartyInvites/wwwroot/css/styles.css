@@ -7,8 +7,10 @@
 }
 
 .input-validation-error {
-    border: 1px solid #f00;
+    border: 2px solid #f00;
     background-color: #fee;
+    border-color: red;
+    color:red;
 }
 
 .validation-summary-errors {
